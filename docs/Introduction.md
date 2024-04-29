@@ -2,6 +2,10 @@
 
 # Slate Test from Archbee!!!
 
+sadfasdf
+
+asdfasd
+
 [Slate](http://slatejs.org) is a *completely* customizable framework for building rich text editors. Testing again.
 
 Slate lets you build rich, intuitive editors like those in [Medium](https://medium.com/), [Dropbox Paper](https://www.dropbox.com/paper) or [Google Docs](https://www.google.com/docs/about/)—which are becoming table stakes for applications on the web—without your codebase getting mired in complexity.
@@ -32,7 +36,7 @@ Which brings me to how Slate solves all of that...
 
 ## Principles
 
-Slate tries to solve the question of "[Why?](Introduction.md#why)" with a few principles:
+Slate tries to solve the question of "[Why?]()" with a few principles:
 
 1. **First-class plugins.** The most important part of Slate is that plugins are first-class entities. That means you can *completely* customize the editing experience, to build complex editors like Medium's or Dropbox's, without having to fight against the library's assumptions.
 2. **Schema-less core.** Slate's core logic assumes very little about the schema of the data you'll be editing, which means that there are no assumptions baked into the library that'll trip you up when you need to go beyond the most basic use cases.
@@ -83,6 +87,6 @@ If you're maintaining a translation, feel free to pull request it here!
 
 ## Contributing!
 
-All contributions are super welcome! Check out the [Contributing instructions](general/contributing.md) for more info!
+All contributions are super welcome! Check out the [Contributing instructions]() for more info!
 
 Slate is [MIT-licensed](https://github.com/ianstormtaylor/slate/tree/f6bfe034d707693488c38da77537fd36cb8856cf/License.md).
