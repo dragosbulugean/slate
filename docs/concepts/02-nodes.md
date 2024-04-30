@@ -27,11 +27,11 @@ const editor = {
 Mirroring the DOM as much as possible is one of Slate's principles. People use the DOM to represent documents with richtext-like structures all the time. Mirroring the DOM helps make the library familiar for new users, and it lets us reuse battle-tested patterns without having to reinvent them ourselves.
 
 > 🤖 The following content on Mozilla's Developer Network may help you learn more about the corresponding DOM concepts:
->
-> - [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
-> - [Block Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
-> - [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
-> - [Text elements](https://developer.mozilla.org/en-US/docs/Web/API/Text)
+
+- [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+- [Block Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+- [Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+- [Text elements](https://developer.mozilla.org/en-US/docs/Web/API/Text)
 
 A Slate document is a nested and recursive structure. In a document, elements can have children nodes—all of which may have children nodes without limit. The nested and recursive structure enables you to model simple behaviors such as user mentions and hashtags or complex behaviors such as tables and figures with captions.
 
@@ -72,7 +72,7 @@ const quote = {
 }
 ```
 
-It's important to note that you can use _any_ custom properties you want. The `type` property in that example isn't something Slate knows or cares about. If you were defining your own "link" nodes, you might have a `url` property:
+It's important to note that you can use *any* custom properties you want. The `type` property in that example isn't something Slate knows or cares about. If you were defining your own "link" nodes, you might have a `url` property:
 
 ```javascript
 const link = {
@@ -104,7 +104,7 @@ But in certain cases, like for links, you might want to make them "inline" flowi
 
 > 🤖 This is a concept borrowed from the DOM's behavior, see [Block Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) and [Inline Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements).
 
-You can define which nodes are treated as inline nodes by overriding the `editor.isInline` function. \(By default it always returns `false`.\) Note that inline nodes cannot be the first or last child of a parent block, nor can it be next to another inline node in the children array. Slate will automatically space these with `{ text: '' }` children by default with [`normalizeNode`](11-normalizing.md#built-in-constraints).
+You can define which nodes are treated as inline nodes by overriding the `editor.isInline` function. (By default it always returns `false`.) Note that inline nodes cannot be the first or last child of a parent block, nor can it be next to another inline node in the children array. Slate will automatically space these with `{ text: '' }` children by default with [`normalizeNode`](11-normalizing.md#built-in-constraints).
 
 Elements can either contain block elements or inline elements intermingled with text nodes as children. But elements **cannot** contain some children that are blocks and some that are inlines.
 
@@ -116,7 +116,7 @@ Elements default to being non-void, meaning that their children are fully editab
 
 > 🤖 This is a concept borrowed from the HTML spec, see [Void Elements](https://www.w3.org/TR/2011/WD-html-markup-20110405/syntax.html#void-element).
 
-You can define which elements are treated as void by overriding the `editor.isVoid` function. \(By default it always returns `false`.\)
+You can define which elements are treated as void by overriding the `editor.isVoid` function. (By default it always returns `false`.)
 
 ## `Text`
 
@@ -137,4 +137,5 @@ const text = {
 }
 ```
 
-Text nodes too can contain any custom properties you want, and that's how you implement custom formatting like **bold**, _italic_, `code`, etc.
+Text nodes too can contain any custom properties you want, and that's how you implement custom formatting like **bold**, *italic*, `code`, etc.
+
